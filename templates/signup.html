@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Sign Up</title>
+	<style type="text/css">
+		.box{
+			border-style: solid;
+			background-attachment: fixed;
+			background-color: #40E0D0;
+			height: 800px;
+		}
+		.box_form{
+			border-style: solid;
+			background-color: white;
+			margin-left : 300px;
+			margin-right: 300px;
+		}
+	</style>
+</head>
+<body>
+	<div class="box" >
+		<h1 align="center">Sign Up</h1>
+		<div class="box_form">
+			<form action="/register" method="POST">
+		<!--<fieldset>-->
+		<!--	<legend>Account Sign Up Page</legend>-->
+			<table border="1" align="center">
+				<tr>
+					<td><label>Account Name</label></td>
+					<td><input type="text" name="fname" placeholder="Enter Your Full Name"></td>
+				</tr>
+
+				<tr>
+					<td><label>Phone No</label></td>
+					<td><input type="tel" name="p_no" placeholder="Phone Number"></td>
+				</tr>
+
+				<tr>
+					<td><label>Address</label></td>
+					<td><textarea type="text" name="add" rows="5" cols="25" placeholder="Enter Your Address"></textarea></td>
+				</tr>
+
+				<tr>
+					<td><label>Account No</label></td>
+					<td><input type="Number" name="acct_num" placeholder="Enter Account No"></td>
+				</tr>
+
+				<tr>
+					<td><label>Account Pin</label></td>
+					<td><input type="password" name="acct_p" placeholder="Enter pin number"></td>
+				</tr>
+
+				<tr>
+					<td><label>Balance</label></td>
+					<td><input type="Number" name="bal" placeholder="Enter the balance"></td>
+				</tr>
+
+				<tr>
+					<td><label>Email ID</label></td>
+					<td><input type="Email" name="e_id" placeholder="Enter the Balance"></td>
+				</tr>
+
+				<tr>
+					<td><label>Username</label></td>
+					<td><input type="text" name="uname" placeholder="Username"></td>
+				</tr>
+
+				<tr>
+					<td><label>Passsowrd</label></td>
+					<td><input type="password" name="pwd" placeholder="Enter the password"></td>
+				</tr>
+
+				<tr>
+					<td colspan="2" height="50px" align="center"><input type="submit" value="Register"></td>
+				</tr>
+			</table>
+		<!--</fieldset>-->
+	</form>
+		</div>
+
+		
+	</div>
+	
+</body>
+</html>

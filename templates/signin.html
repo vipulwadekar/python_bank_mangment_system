@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Sign In</title>
+	<style type="text/css">
+		.box{
+			border-style: solid;
+			background-attachment: fixed;
+			background-color: #40E0D0;
+			height: 800px;
+		}
+		.box_form{
+			border-style: solid;
+			background-color: white;
+			
+			margin-left : 300px;
+			margin-right: 300px;
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<h1 align="center">Sign In</h1>
+		<div class="box_form">
+			<form action="/login" method="POST">
+				<table border="2" align="center" >
+					<tr>
+						<th>Username</th>
+						<td><input type="text" name="uname" placeholder="Username"></td>
+					</tr>
+
+				<tr>
+						<th>Passsowrd</th>
+						<td><input type="password" name="pwd" placeholder="Enter the password"></td>
+				</tr>
+
+				<tr>
+					<td colspan="2" height="50px" align="center"><input type="submit" value="Login"></td>
+				</tr>
+
+				</table>
+			</form>
+		</div>
+	</div>
+</body>
+</html>

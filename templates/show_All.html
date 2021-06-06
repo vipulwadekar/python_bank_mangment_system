@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <title>Update</title>
+   <style type="text/css">
+      .box{
+         border-style: solid;
+         background-attachment: fixed;
+         background-color: #40E0D0;
+         height: 800px;
+      }
+   </style>
+</head>
+<body>
+   <div class="box">
+      <center>
+      <h1>Account Holder All Details </h1>
+   <TABLE BORDER="1">
+<thead>
+<th>acct_nm</th>
+<th>phone_no</th>
+<th>address</th>
+<th>acct_no</th>
+<th>acct_pin</th>
+<th>balance</th>
+<th>email_id</th>
+<th>username</th>
+<th>password</th>
+</thead>
+   {% for row in dresult %}
+            <tr>
+               <td>{{row[0]}}</td>
+               <td>{{row[1]}}</td>
+               <td>{{row[2]}}</td>
+               <td>{{row[3]}}</td>
+               <td>{{row[4]}}</td>  
+               <td>{{row[5]}}</td>
+               <td>{{row[6]}}</td>
+               <td>{{row[7]}}</td>
+               <td>{{row[8]}}</td>
+            </tr>
+         {% endfor %}
+    </table>
+
+    <h2>From Above Table Which Data do you want to be updated : </h2>
+    <form action="/update2" method="POST">
+      
+      <label>acct_no<label></label><input type="text" name="ano">
+      <input type="text" name="get_field1">
+      <input type="text" name="set_data1"><br>
+      <!--<input type="text" name="get_field2">
+      <input type="text" name="set_data2"><br>-->
+      <input type="submit" value="Update">
+   </form>
+    
+
+    </center>   
+   </div>
+   
+</body>
+</html>

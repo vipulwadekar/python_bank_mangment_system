@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Show All Records of customer</title>
+   <style type="text/css">
+      .box{
+         border-style: solid;
+         background-attachment: fixed;
+         background-color: #40E0D0;
+         height: 800px;
+      }
+   </style>
+</head>
+<body>
+   <div class="box">
+      <center>
+<h1>Account Holder Details</h1>
+<TABLE BORDER="1">
+<thead>
+<th>Account Name</th>
+<th>Account Number</th>
+<th>Balance</th>
+<th>Email Id</th>
+<th>User Name</th>
+</thead>
+{% for row in result %}
+            <tr>
+               <td>{{row[0]}}</td>
+               <td>{{row[3]}}</td>
+               <td>{{row[5]}}</td>
+               <td>{{row[6]}}</td>
+               <td>{{row[7]}}</td>
+         
+            </tr>
+         {% endfor %}
+    </table>
+    </center>   
+   </div>
+	
+   
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Show All Records of customer</title>
+   <style type="text/css">
+      .box{
+         border-style: solid;
+         background-attachment: fixed;
+         background-color: #40E0D0;
+         height: 800px;
+      }
+   </style>
+</head>
+<body>
+   <!--{% for i in dresult %}
+   <h1>{{i}}</h1>
+   {% endfor %}-->
+<div class="box">
+  <center>
+      <h1>Account Holder All Details </h1>
+   <TABLE BORDER="1">
+<thead>
+<th>acct_nm</th>
+<th>phone_no</th>
+<th>address</th>
+<th>acct_no</th>
+<th>acct_pin</th>
+<th>balance</th>
+<th>email_id</th>
+<th>username</th>
+<th>password</th>
+</thead>
+   {% for row in dresult %}
+            <tr>
+               <td>{{row[0]}}</td>
+               <td>{{row[1]}}</td>
+               <td>{{row[2]}}</td>
+               <td>{{row[3]}}</td>
+               <td>{{row[4]}}</td>  
+               <td>{{row[5]}}</td>
+               <td>{{row[6]}}</td>
+               <td>{{row[7]}}</td>
+               <td>{{row[8]}}</td>
+            </tr>
+         {% endfor %}
+    </table>
+   </center> 
+</div>
+  
+</body>
+</html>
